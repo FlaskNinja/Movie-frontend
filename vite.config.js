@@ -6,6 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),
    tailwindcss(),],
-  base: process.envv.VITE_BASE_PATH || "/Movie-frontend"
+  base: process.envv.VITE_BASE_PATH || "/Movie-frontend",
   
 })
