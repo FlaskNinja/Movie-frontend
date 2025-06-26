@@ -186,10 +186,11 @@ const Navbar = () => {
     <nav className="bg-[#0f0f0f] text-white fixed top-0 w-full z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" onClick={closeMenu} className="flex items-center gap-2">
-          <img src={logo} alt="Logo" className="h-8" />
-          <span className="font-semibold text-lg">CineScope</span>
-        </Link>
+          <Link to="/" onClick={closeMenu} className="flex items-center gap-2">
+            <img src={logo} alt="T Flix Logo" className="h-8" title="T Flix" />
+            <span className="font-bold text-lg tracking-wide text-red-500">T Flix</span>
+          </Link>
+
 
         {/* Search */}
         <form
