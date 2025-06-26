@@ -168,7 +168,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="pt-16 bg-black text-white min-h-screen">
+    <div className="pt-24 bg-black text-white min-h-screen">
+      <Filter onFilter={fetchMovies} />
       {/* Hero Section */}
       {movie && (
         <div className="relative h-[70vh] w-full">
@@ -201,7 +202,6 @@ const Home = () => {
 
       {/* Filter and Movie Grid */}
       <div className="p-4">
-        <Filter onFilter={fetchMovies} />
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 p-2">
           {movies.map((movie) => (
