@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import logo from '../assets/logo.png'; 
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import axios from '../axiosConfig';
@@ -65,7 +64,7 @@ const Login = () => {
 
   return (
     <div className="login min-h-screen flex flex-col items-center justify-center bg-black px-4">
-      <img src={logo} alt="Logo" className="login-logo w-32 mb-6" />
+{/*       <img src={logo} alt="Logo" className="login-logo w-32 mb-6" /> */}
       <div className="login-form w-full max-w-md bg-slate-800 p-6 rounded shadow-md">
         <h2 className="text-2xl font-semibold mb-4 text-center">{signState}</h2>
         
