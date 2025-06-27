@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://movie-backend-1-3le3.onrender.com",
+    baseURL: 'https://movie-backend-1-3le3.onrender.com',
+  withCredentials: true, // if you’re using cookies/session
 });
 
 // Attach token
