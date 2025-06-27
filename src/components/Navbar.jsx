@@ -145,7 +145,6 @@ import { useState, useContext, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiMenu, FiX, FiUser, FiSearch } from 'react-icons/fi';
 import { AuthContext } from '../context/AuthContext';
-import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const { user, logout, isAuthenticated } = useContext(AuthContext);
